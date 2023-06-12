@@ -24,7 +24,7 @@ function sendMessage() {
     .then(response => response.json())
     .then(data => {
       const response = data.message;
-      appendMessage('Chatbot', response);
+      appendMessage('Ben', response);
     })
     .catch(error => {
       console.error('Error:', error);
