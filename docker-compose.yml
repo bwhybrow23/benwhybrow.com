@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  benwhybrow.com:
+    container_name: benwhybrow.com
+    ports:
+      - '3023:3023'
+    volumes:
+      - '/var/www/benwhybrow.com:/var/www/benwhybrow.com'
+    restart: unless-stopped
+    image: bwhybrow23/benwhybrow.com
+    network_mode: bridge

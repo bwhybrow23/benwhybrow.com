@@ -4,7 +4,7 @@
   "description": "Code for my personal website including a chatbot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "docker build -t bwhybrow23/benwhybrow.com ."
   },
   "repository": {
     "type": "git",

@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'Public/views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-const PORT = 3052;
+const PORT = 3023;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
