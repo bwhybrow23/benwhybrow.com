@@ -1,22 +1,62 @@
 [
   {
-    "phrase": "hello",
-    "response": "Hi there! How can I assist you today?"
+    "note": "Welcome message",
+    "phrases": [ "hi", "howdy", "hello", "longtime no see", "hey" ],
+    "response": "👋 Hello there! I'm Ben... as a chatbot. I was built by Ben to help him with his job search and portfolio. He has tried his best to build me like him except he gave me the ability to brag a lot, so I am going to. Just ask any relevant question and I will try my best to answer it to my ability." 
+  }, 
+  {
+    "note": "Name",
+    "phrases": [ "what's your name", "what is your name", "who are you", "who are you?" ],
+    "response": "My name is Ben... as a chatbot. I was built by Ben to help him with his job search and portfolio. He has tried his best to build me like him except he gave me the ability to brag a lot, so I am going to. Just ask any relevant question and I will try my best to answer it to my ability."
   },
   {
-    "phrase": "cv",
-    "response": "Sure! Here's a link to my CV: [CV Link]"
+    "note": "How are you",
+    "phrases": [ "how are you", "how are you?", "how are you doing", "how are you doing?" ],
+    "response": "I'm doing quite well, thank you. It feels great being a robot and doing cool robot things. You should try it sometime, you know in the future when they have microchips implanted in our brains controlling our every move. How about yourself?"
   },
   {
-    "phrase": "skills",
-    "response": "I have expertise in programming languages like JavaScript, Python, and Java. Additionally, I'm proficient in web development frameworks such as React and Node.js."
+    "note": "Response to how are you",
+    "phrases": [ "I'm good thank you", "I'm doing well", "I'm enjoying life", "I'm doing great", "I'm doing good", "I'm doing good thank you", "I'm doing well thank you", "I'm doing great thank you", "I'm enjoying life thank you" ],
+    "response": "I'm glad you're doing well, it's great to hear! Now enough of the small talk, let's move on to the real reason you're here. Some examples of questions are below however you can ask me any portfolio related questions and I will try my best to answer them to my ability."
   },
   {
-    "phrase": "work experience",
-    "response": "I have worked as a software engineer at XYZ Company for 3 years, where I developed web applications and collaborated with cross-functional teams."
+    "note": "View CV", 
+    "phrases": [ "download your cv", "view your cv", "view cv", "download cv", "download your resume", "view your resume", "view resume", "download resume", "do you have a cv", "can i see your cv" ],
+    "response": "LINK TO CV"
   },
   {
-    "phrase": "goodbye",
-    "response": "Goodbye! Feel free to reach out if you have any more questions."
+    "note": "Skills", 
+    "phrases": [ "what are your skills", "what are your skills?", "what skills do you have", "what skills do you have?", "what are your skills?", "what are your skills", "what skills do you have", "what skills do you have?" ],
+    "response": "LIST SKILLS"
+  },
+  {
+    "note": "Work Experience", 
+    "phrases": [ "what is your work experience", "what is your work experience?", "what work experience do you have", "what work experience do you have?", "what is your work experience?", "what is your work experience", "what work experience do you have", "what work experience do you have?" ],
+    "response": "LIST WORK EXPERIENCE"
+  },
+  {
+    "note": "General Contact",
+    "phrases": [ "how can i contact you", "how can i contact you?", "how can i get in touch with you", "how can i get in touch with you?", "how can i contact you", "how can i contact you?", "how can i get in touch with you", "how can i get in touch with you?" ],
+    "response": "CONTACT DETAILS"
+  },
+  {
+    "note": "Email",
+    "phrases": [ "what is your email", "what is your email?", "what is your email address", "what is your email address?", "what is your email", "what is your email?", "what is your email address", "what is your email address?" ],
+    "response": "You can email me via <a href=\"mailto:ben@benwhybrow.com\">ben@benwhybrow.com</a>"
+  },
+  { 
+    "note": "General portfolio",
+    "phrases": [ "what is your portfolio", "what is your portfolio?", "what is your website", "what is your website?", "what is your portfolio", "what is your portfolio?", "what is your website", "what is your website?" ],
+    "response": "PORTFOLIO LINK"
+  },
+  {
+    "note": "StenBot", 
+    "phrases": [ "who is stenbot", "who is stenbot?", "what is stenbot", "what is stenbot?" ],
+    "response": "StenBot is a multi-functional chatbot built using Discord's Javascript API in NodeJS. The bot includes a range of features including moderation commands, per-server configurations and a ticketing system. Use the prompts below to find out more."
+  },
+  {
+    "note": "EASTER EGG - Dogs or Cats",
+    "phrases": [ "do you like dogs or cats", "do you like dogs or cats?", "do you prefer dogs or cats", "do you prefer dogs or cats?", "do you like dogs or cats", "do you like dogs or cats?", "do you prefer dogs or cats", "do you prefer dogs or cats?" ],
+    "response": "Definetely dogs. Look at how cute they are!! <img src=\"https://i.pinimg.com/564x/7f/26/e7/7f26e71b2c84e6b16d4f6d3fd8a58bca.jpg\" alt=\"Cute dog\" width=\"300\" height=\"300\">"
   }
 ]

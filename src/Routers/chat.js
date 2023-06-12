@@ -6,13 +6,11 @@ const dataset = require('../../src/Data/dataset.json');
 
 //Functions
 function findResponse(userInput) {
-  // Implement your logic here to find the appropriate response
-  // Compare the user's input with the phrases in your dataset
-  // Return the matched response or a default response if no match is found
-
-  // Example implementation:
   for (const item of dataset) {
-    if (item.phrase === userInput) {
+    const phrases = item.phrases;
+    const matched = phrases.some(phrase => userInput.includes(phrase));
+
+    if (matched) {
       return item.response;
     }
   }
