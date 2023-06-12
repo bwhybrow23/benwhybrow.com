@@ -1076,3 +1076,35 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+
+/* Chat bot */
+/* CSS styles for the chatbot icon */
+#chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* CSS styles for the chat window */
+#chat-window {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 300px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  display: none;
+  z-index: 9999;
+}

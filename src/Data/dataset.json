@@ -1,0 +1,22 @@
+[
+  {
+    "phrase": "hello",
+    "response": "Hi there! How can I assist you today?"
+  },
+  {
+    "phrase": "cv",
+    "response": "Sure! Here's a link to my CV: [CV Link]"
+  },
+  {
+    "phrase": "skills",
+    "response": "I have expertise in programming languages like JavaScript, Python, and Java. Additionally, I'm proficient in web development frameworks such as React and Node.js."
+  },
+  {
+    "phrase": "work experience",
+    "response": "I have worked as a software engineer at XYZ Company for 3 years, where I developed web applications and collaborated with cross-functional teams."
+  },
+  {
+    "phrase": "goodbye",
+    "response": "Goodbye! Feel free to reach out if you have any more questions."
+  }
+]
