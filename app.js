@@ -11,8 +11,8 @@ app.use(express.urlencoded({
 }));
 app.use(cors());
 
-app.use('/assets', express.static('Public/assets'));
-app.set('views', path.join(__dirname, 'Public/views'));
+app.use('/assets', express.static('Public/Assets'));
+app.set('views', path.join(__dirname, 'Public/Views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
