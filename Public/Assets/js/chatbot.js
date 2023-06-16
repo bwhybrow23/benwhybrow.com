@@ -1,7 +1,18 @@
 // Toggle visibility of the chat window
 function toggleChatWindow() {
   const chatWindow = document.getElementById('chat-window');
-  chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+  
+  if (chatWindow.style.display === 'none') {
+    chatWindow.style.display = 'block';
+    setTimeout(() => {
+      chatWindow.classList.add('show');
+    }, 50); // Add a slight delay before adding the 'show' class
+  } else {
+    chatWindow.classList.remove('show');
+    setTimeout(() => {
+      chatWindow.style.display = 'none';
+    }, 1000); // Adjust the duration to match the CSS transition time
+  }
 }
 
 // Send a message to the chat log
@@ -9,7 +20,7 @@ function sendMessage() {
   const userInput = document.getElementById('user-input').value;
   document.getElementById('user-input').value = ''; // Clear the input field
 
-  appendMessage('User', userInput);
+  appendMessage('You', userInput);
 
   // Send the user's message to the chatbot server
   fetch('/chat', {

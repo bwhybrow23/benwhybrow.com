@@ -257,7 +257,7 @@ a:hover {
 	-ms-animation: overlay 1.5s 1.5s forwards;
 	animation: overlay 1.5s 1.5s forwards;
 	background-attachment: fixed, fixed;
-	background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+	background-image: url("../images/overlay-pattern.png"), url("../images/overlay.svg");
 	background-position: top left, center center;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, cover;
@@ -913,10 +913,19 @@ a:hover {
   height: 500px;
   background-color: #f5f5f5;
   border-radius: 6px;
-  display: none;
+  display: block;
   z-index: 9999;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: black;
+}
+
+#chat-window.fade-in {
+  opacity: 0; /* Initially hide the chat window */
+  transition: opacity 1s; /* Add transition effect for opacity */
+}
+
+#chat-window.fade-in.show {
+  opacity: 1; /* When the show class is added, fade in the chat window */
 }
 
 #chat-log {
