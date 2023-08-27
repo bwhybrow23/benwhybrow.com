@@ -1,0 +1,176 @@
+/* Import font and icons */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("fontawesome-all.min.css");
+
+/* Global styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #2a2a2a;  /* Darker background for contrast */
+    color: #f3f3f3;
+}
+
+.purple {
+    color: #DA70D6;
+}
+
+.content {
+    max-width: 65%;
+    margin: 30px auto;
+}
+
+.row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Spacing between the sections */
+}
+
+.third, .twothird {
+    background-color: #3a3a3a;  /* Slightly lighter than the background for distinction */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Shadow for depth */
+}
+
+.third {
+    flex: 1;
+    max-width: calc(100% / 3);
+}
+
+.twothird {
+    flex: 2;
+    max-width: calc(2 * 100% / 3);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+/* Photo and overlay */
+.photo-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.photo-overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 10%;
+    background-color: rgba(143, 0, 255, 0.3);  /* Purple overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-text {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+/* Skills visualization */
+.skill-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.skill {
+    height: 24px;
+    border-radius: 4px;
+    background-color: #DA70D6;  /* Lighter color for visual representation */
+    text-align: center;
+}
+
+.office {
+    width: 90%;
+}
+
+.customer-service {
+  width: 85%;
+}
+
+.html {
+  width: 70%;
+}
+
+.node {
+  width: 60%;
+}
+
+/* Experience & Education */
+.experience, .education {
+  background-color: #3a3a3a;  /* Slightly lighter than the background for distinction */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Shadow for depth */
+  margin-top: 20px;  /* Space between experience and education sections */
+}
+
+.current {
+  background-color: #DA70D6;
+  padding: 3px;
+  border-radius: 7px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #1a1a1a;  /* Darker footer */
+    padding: 20px 0;
+    color: #f3f3f3;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f3f3f3;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: opacity 0.3s;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .row-padding {
+      flex-direction: column;
+  }
+
+  .third, .twothird, .experience, .education {
+      max-width: 100%;
+  }
+}

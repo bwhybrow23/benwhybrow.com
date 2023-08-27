@@ -13,4 +13,16 @@ router.get('/', (req, res) => {
   }
 });
 
+//CV
+router.get('/cv', (req, res) => {
+  try {
+    res.render('cv.ejs');
+  } catch (error) {
+    res.status(500).send({
+      error: true,
+      data: error.message
+    });
+  }
+});
+
 module.exports = router;

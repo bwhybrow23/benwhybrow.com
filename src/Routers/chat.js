@@ -28,10 +28,6 @@ function findResponse(tokens) {
   return "Sorry, I couldn't understand your request.";
 }
 
-router.get('/chat', (req, res) => {
-  res.render('chat.ejs');
-});
-
 router.post('/chat', (req, res) => {
   const userInput = req.body.message; // Extract the user's input from the request body
   const tokens = tokenizer.tokenize(userInput); // Tokenize the user input
