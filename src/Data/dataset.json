@@ -22,22 +22,22 @@
   {
     "note": "View CV", 
     "phrases": [ "download your cv", "view your cv", "view cv", "download cv", "download your resume", "view your resume", "view resume", "download resume", "do you have a cv", "can i see your cv" ],
-    "response": "LINK TO CV"
+    "response": "My CV can be found <a href=\"https://benwhybrow.com/cv\">here</a>."
   },
   {
     "note": "Skills", 
     "phrases": [ "what are your skills", "what are your skills?", "what skills do you have", "what skills do you have?", "what are your skills?", "what are your skills", "what skills do you have", "what skills do you have?" ],
-    "response": "LIST SKILLS"
+    "response": "My list of skills can be found on my CV <a href=\"https://benwhybrow.com/cv\">here</a>."
   },
   {
     "note": "Work Experience", 
     "phrases": [ "what is your work experience", "what is your work experience?", "what work experience do you have", "what work experience do you have?", "what is your work experience?", "what is your work experience", "what work experience do you have", "what work experience do you have?" ],
-    "response": "LIST WORK EXPERIENCE"
+    "response": "My work experience can be found on my CV <a href=\"https://benwhybrow.com/cv\">here</a>."
   },
   {
     "note": "General Contact",
     "phrases": [ "how can i contact you", "how can i contact you?", "how can i get in touch with you", "how can i get in touch with you?", "how can i contact you", "how can i contact you?", "how can i get in touch with you", "how can i get in touch with you?" ],
-    "response": "CONTACT DETAILS"
+    "response": "You can contact me via email at <a href=\"mailto:ben@benwhybrow.com\">ben@benwhybrow.com</a> or via my social media platforms."
   },
   {
     "note": "Email",
@@ -47,7 +47,7 @@
   { 
     "note": "General portfolio",
     "phrases": [ "what is your portfolio", "what is your portfolio?", "what is your website", "what is your website?", "what is your portfolio", "what is your portfolio?", "what is your website", "what is your website?" ],
-    "response": "PORTFOLIO LINK"
+    "response": "Currently, my portfolio is a work in progress. My projects can be found on my <a href=\"https://github.com/bwhybrow23\">Github page</a>, or you can <a href=\"https://benwhybrow.com/cv\">view my CV</a> for a list of my skills and work experience."
   },
   {
     "note": "StenBot", 
