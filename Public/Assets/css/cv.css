@@ -13,6 +13,10 @@ body {
     color: #DA70D6;
 }
 
+.white {
+    color: #f3f3f3;
+}
+
 .content {
     max-width: 65%;
     margin: 30px auto;
