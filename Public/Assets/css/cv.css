@@ -56,16 +56,13 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 900;
+  margin-block-end: 10px !important;
 }
 
 h5 {
   font-size: 16px;
   font-weight: 900;
-}
-
-h6 {
-  font-size: 14px;
-  font-weight: 900;
+  margin-block-start: 0 !important;
 }
 
 .flex-container {
@@ -74,28 +71,10 @@ h6 {
   margin: 0;
 }
 
-/* Photo and overlay */
+/* Photo */
 .photo-container {
     position: relative;
     margin-bottom: 20px;
-}
-
-.photo-overlay-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 10%;
-    background-color: rgba(143, 0, 255, 0.3);  /* Purple overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-text {
-    font-size: 24px;
-    font-weight: 900;
-    color: #ffffff;
 }
 
 /* Skills visualization */
@@ -144,6 +123,15 @@ h6 {
   border-radius: 7px;
   font-weight: 600;
   margin-left: 3px;
+}
+
+p.date {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  color: #DA70D6;
 }
 
 /* Footer */
