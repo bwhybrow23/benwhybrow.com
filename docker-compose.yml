@@ -1,4 +1,3 @@
-version: '3.3'
 services:
   benwhybrow.com:
     container_name: benwhybrow.com
