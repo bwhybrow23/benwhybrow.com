@@ -5,35 +5,30 @@ const natural = require('natural');
 // Dataset of phrases and responses
 const dataset = require('../../src/Data/dataset.json');
 
-// Create a tokenizer
-const tokenizer = new natural.WordTokenizer();
-
 // Functions
-function findResponse(tokens) {
+function findResponse(userInput) {
+  let bestMatch = null;
+  let highestScore = 0;
+
   for (const item of dataset) {
-    const phrases = item.phrases;
+    for (const phrase of item.phrases) {
+      const score = natural.JaroWinklerDistance(userInput.toLowerCase(), phrase.toLowerCase());
 
-    // Check if any of the phrases match the tokens
-    const matched = phrases.some((phrase) =>
-      tokens.some((token) =>
-        phrase.toLowerCase().includes(token.toLowerCase())
-      )
-    );
-
-    if (matched) {
-      return item.response;
+      if (score > highestScore) {
+        highestScore = score;
+        bestMatch = item.response;
+      }
     }
   }
 
-  return "Sorry, I couldn't understand your request.";
+  return bestMatch || "Sorry, I couldn't understand your request.";
 }
 
 router.post('/chat', (req, res) => {
   const userInput = req.body.message; // Extract the user's input from the request body
-  const tokens = tokenizer.tokenize(userInput); // Tokenize the user input
 
-  // Process the tokenized user input and find a suitable response
-  const response = findResponse(tokens);
+  // Process the user input and find a suitable response
+  const response = findResponse(userInput);
 
   res.json({ message: response });
 });

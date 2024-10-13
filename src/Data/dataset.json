@@ -57,6 +57,11 @@
   {
     "note": "EASTER EGG - Dogs or Cats",
     "phrases": [ "do you like dogs or cats", "do you like dogs or cats?", "do you prefer dogs or cats", "do you prefer dogs or cats?", "do you like dogs or cats", "do you like dogs or cats?", "do you prefer dogs or cats", "do you prefer dogs or cats?" ],
-    "response": "Definetely dogs. Look at how cute they are!! <img src=\"https://i.pinimg.com/564x/7f/26/e7/7f26e71b2c84e6b16d4f6d3fd8a58bca.jpg\" alt=\"Cute dog\" width=\"300\" height=\"300\">"
+    "response": "Definetely dogs. Look at how cute they are!! <img src=\"https://i.pinimg.com/originals/74/aa/d3/74aad3cdc5bddb5e2d07f2e6dad8d324.jpg\" width=\"300\">"
+  },
+  {
+    "note": "EASTER EGG - Favourite Animal",
+    "phrases": [ "what is your favourite animal", "what is your favourite animal?", "what is your favourite animal", "what is your favourite animal?", "favourite animal", "favourite animal?" ],
+    "response": "My favourite animals are foxes. They are so cute and fluffy! <img src=\"https://i.pinimg.com/originals/2a/65/c8/2a65c85c9efd668903c2c067cd16ddd2.jpg\" width=\"300\">"
   }
 ]

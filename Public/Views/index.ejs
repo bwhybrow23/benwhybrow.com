@@ -30,12 +30,19 @@
 
       <!-- Chat window -->
       <div id="chat-window" class="fade-in">
+        <div id="chat-header">
+          <p>Ben the Chatbot</p>
+          <span id="close-chat" onclick="toggleChatWindow()">&#10006;</span>
+        </div>
         <div id="chat-log">
-          <p><strong>Ben: </strong>Hi! My name is Ben... but in robot form. I will try my best to help you out as best as possible. Throw phrases at me and I will answer them. For example, you can ask me for a link to my CV, or my email address. If you experience any bugs, shoot me an email and I'll get the real Ben to fix me.</p>
+          <p class="Ben"><strong>Ben: </strong>Hi! My name is Ben... but in robot form. I will try my best to help you out as best as possible. Throw phrases at me and I will answer them. For example, you can ask me for a link to my CV, or my email address. If you experience any bugs, shoot me an email and I'll get the real Ben to fix me.</p>
         </div>
         <div id="chat-input">
           <input type="text" id="user-input" placeholder="Type your message..." />
           <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+        <div class="action-bar">
+          <p id="clear-chat" onclick="clearChatLog()">Clear Chat</p>
         </div>
       </div>
 
@@ -44,13 +51,12 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Ben Whybrow</h1>
-						<p>Node and C# Programmer &nbsp;&bull;&nbsp; Always aspriring to learn</p>
+						<p>Passionate about IT and Cars &nbsp;&bull;&nbsp; Aspiring Entrepreneur &nbsp;&bull;&nbsp; Neurodivergent</p>
 						<nav>
 							<ul>
-								<li><a href="https://instagram.benwhybrow.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://twitter.benwhybrow.com" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<!-- <li><a href="https://discord.benwhybrow.com" class="icon brands fa-discord"><span class="label">Discord</span></a></li> -->
-								<li><a href="https://github.benwhybrow.com" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://linkedin.com/in/benjamin-whybrow-b80a0218a/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://instagram.com/benwhybrow23" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/bwhybrow23" class="icon brands fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://paypal.benwhybrow.com" class="icon brands fa-paypal"><span class="label">PayPal</span></a></li>
 								<li><a href="mailto:ben@benwhybrow.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
@@ -59,7 +65,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Ben Whybrow 2023</span>
+						<span class="copyright">&copy; Ben Whybrow 2024</span>
 					</footer>
 
 			</div>

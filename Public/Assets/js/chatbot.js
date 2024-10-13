@@ -45,6 +45,16 @@ function sendMessage() {
 function appendMessage(sender, message) {
   const chatLog = document.getElementById('chat-log');
   const messageElement = document.createElement('p');
+  messageElement.className = sender;
   messageElement.innerHTML = `<strong>${sender}: </strong>${message}`;
   chatLog.appendChild(messageElement);
+}
+
+// Clear the chat log
+function clearChatLog() {
+  // Empty Chat
+  document.getElementById('chat-log').innerHTML = '';
+
+  // Send initial message
+  appendMessage('Ben', "Hi! My name is Ben... but in robot form. I will try my best to help you out as best as possible. Throw phrases at me and I will answer them. For example, you can ask me for a link to my CV, or my email address. If you experience any bugs, shoot me an email and I'll get the real Ben to fix me.")
 }
