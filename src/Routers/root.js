@@ -17,7 +17,9 @@ router.get('/', (req, res) => {
 //CV
 router.get('/cv', (req, res) => {
   try {
-    res.render('cv.ejs');
+    // res.render('cv.ejs');
+    const filePath = path.join(__dirname, '../..', 'Public', 'Assets', 'CV.pdf');
+    res.sendFile(filePath);
   } catch (error) {
     res.status(500).send({
       error: true,
