@@ -1,4 +1,4 @@
-FROM node:20.15.0
+FROM node:23.11.0
 
 # Install Nano
 RUN ["apt-get", "update"]
@@ -10,7 +10,7 @@ WORKDIR /var/www/benwhybrow.com
 # Install app dependencies
 COPY package*.json ./
 
-RUN npm install
+RUN npm ci
 
 # Bundle app source
 COPY . .
